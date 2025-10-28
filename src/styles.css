@@ -40,6 +40,12 @@ body {
     }
 }
 
+@media(max-width: 600px) {
+    body{
+         padding-top: 20%;
+    }
+}
+
 /* Homepage design */
 .profileImage{
     width: 300px;
