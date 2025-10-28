@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.0);" data-bs-theme="dark">
+    <div class="container-fluid">
+        <h1 class="LogoName" style="color: rgb(218, 218, 218);">Raveendiran Sakadevan</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item" >
+                    <a class="nav-link" routerLink="home" routerLinkActive="active" (click)="closeMenu()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about" routerLinkActive="active" (click)="closeMenu()">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="skill" routerLinkActive="active" (click)="closeMenu()">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="awards" routerLinkActive="active" (click)="closeMenu()">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="projects" routerLinkActive="active" (click)="closeMenu()">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="contactme" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+                </li>
+            </ul>
+        </div>
+  </div>
+</nav>
+<!-- <main [@routeAnimations] = "prepareRoute(outlet)">
+<router-outlet #outlet = "outlet"></router-outlet>
+</main> -->
+<router-outlet></router-outlet>
+

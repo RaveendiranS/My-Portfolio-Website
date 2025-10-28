@@ -1,0 +1,315 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    height: 100%;
+    font-family: "Google Sans Code", monospace;
+    color: rgb(218, 218, 218);
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('./app/Images/bg2.jpg') center/cover no-repeat fixed;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    backdrop-filter: blur(50px);
+}
+
+.navbar,
+.navbar .nav-link,
+.navbar .LogoName {
+  color: rgb(60, 224, 205) !important;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(60, 224, 205) !important;
+}
+
+@media(max-width: 768px) {
+    body{
+         padding-top: 10%;
+    }
+}
+
+/* Homepage design */
+.profileImage{
+    width: 300px;
+    height: 300px;
+    padding-top: 5%;
+    background-image: url('./app/Images/Rv1.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+} 
+
+
+.homepage{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+} 
+@media(max-width: 768px) {
+    .homepage{
+        display: grid;
+    }
+}
+
+.profileContent{
+    text-align: center;
+}
+
+.gim-icons{
+    display: flex;
+    padding-top: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.gim-icons svg{
+    color: rgb(218, 218, 218);
+}
+.gim-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    &:focus, &:hover{
+        opacity: 1;
+        background: radial-gradient(rgb(0, 0, 0) 35%,transparent 70%);
+    }
+}
+
+/* Aboutpage design */
+.Aboutpage{
+    height: 90%;
+    width: 100%;
+    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(218, 218, 218);
+}
+
+/* Skillpage design */
+.Skillpage{
+    height: 90%;
+    width: 100%;
+    padding-top: 5%;
+    color: rgb(218, 218, 218);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skillC1{
+    height: 90%;
+    width: 100%;
+    display: grid;
+}
+.skillC2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.skillC2 div{
+    width: 100%;
+}
+
+.skillhead h1:hover{
+    color: white;
+   
+    transition: transform 400ms;
+}
+.skillhead h1{
+    color: rgb(60, 224, 205)
+}
+
+
+
+@media(max-width: 768px) {
+    .skillC2{
+        display: grid;
+    }
+}
+
+.skillContentPtag{
+    height: 400px;
+    width: 700px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+@media(max-width: 768px) {
+    .skillContentPtag{
+        height: 200px;
+        width: 700px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Awardpage design */
+.Awardpage{
+    height: 90%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgb(218, 218, 218);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.AwardC1{
+    height: 90%;
+    width: 100%;
+    display: grid;
+}
+.AwardC2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    padding: 5%;
+}
+
+.AwardContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+@media(max-width: 768px) {
+    .AwardC2{
+        display: grid;
+    }
+}
+
+
+/* Projectpage design */
+.Projectpage{
+    padding-top: 3%;
+    height: 90%;
+    width: 100%;
+    color: rgb(218, 218, 218);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ProjectC1{
+    display: grid;
+}
+.ProjectC2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    padding: 5%;
+}
+
+/* Contactpage design */
+.Contactpage{
+    height: 90%;
+    width: 100%;
+    padding-top: 5%;
+    display: grid;
+    color: rgb(218, 218, 218);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Contactpage h1{
+    color: rgb(60, 224, 205);
+}
+.ContactInput{
+    display: grid;
+    padding: 5px 5px;
+    width: 400px;
+    margin-top: 10%;
+    background-color:  transparent;
+    color: rgb(218, 218, 218);
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+}
+
+.Contactpage textarea{
+    width: 400px;
+    height: 200px;
+    color:  rgb(218, 218, 218);
+}
+
+.Contactpage button{
+    margin-top: 10%;
+    color: rgb(218, 218, 218);
+}
+
+
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.skillC2, .AwardC2, .ProjectC2{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 35%; 
+}
+
+@keyframes move-out{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes move-in{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+/* .Contactpage{
+    animation: 3s cubic-bezier(0.87,0,0.13,1) both move-out;
+} */
+
+.Contactpage, .Projectpage, .Awardpage, .Skillpage, .Aboutpage, .homepage{
+    animation: 0.8s cubic-bezier(0.87,0,0.13,1) both move-in;
+    animation-timing-function: ease-out;
+}
+
