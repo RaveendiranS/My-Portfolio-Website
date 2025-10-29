@@ -88,13 +88,8 @@ body {
     align-items: center;
     gap: 10%;
 } 
-@media(max-width: 768px) {
-    .homepage{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
+
 
 .profileContent{
     text-align: center;
@@ -127,6 +122,7 @@ body {
 .Aboutpage{
     height: 90%;
     width: 100%;
+    margin: 0 auto;
     padding-top: 3%;
     justify-content: center;
     align-items: center;
@@ -134,10 +130,21 @@ body {
     color: rgb(218, 218, 218);
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Skillpage design */
 .Skillpage{
     height: 90%;
     width: 100%;
+    margin: 0 auto;
     padding-top: 5%;
     color: rgb(218, 218, 218);
     justify-content: center;
@@ -169,15 +176,12 @@ body {
     color: rgb(60, 224, 205)
 }
 
-
-
-@media(max-width: 768px) {
-    .skillC2{
-        display: grid;
-    }
+.SkillCertificate{
+        height: 400px;
+        width: 700px ;
 }
 
-.skillContentPtag{
+.skillContentPtag {
     height: 400px;
     width: 700px ;
     display: flex;
@@ -185,15 +189,7 @@ body {
     justify-content: center;
 }
  
-@media(max-width: 768px) {
-    .skillContentPtag{
-        height: 200px;
-        width: 700px ;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
+
 
 /* Awardpage design */
 .Awardpage{
@@ -228,11 +224,11 @@ body {
     gap: 5%;
 }
 
-@media(max-width: 768px) {
-    .AwardC2{
-        display: grid;
-    }
+.AwardCertificate{
+    height: 400px;
+    width: 700px ;
 }
+
 
 
 /* Projectpage design */
@@ -256,6 +252,306 @@ body {
     text-align: center;
     gap: 5%;
     padding: 5%;
+}
+
+.ProjectImage{
+    height: 400px;
+    width: 700px ;
+}
+
+@media(max-width: 768px) {
+    /* .homepage */
+    .homepage{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .profileImage{
+        margin: 0 auto;
+    } 
+
+    /* .Aboutpage */
+    .Aboutpage{
+        margin: 0 auto;
+        height: 90%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .Skillpage */
+    .skillC2{
+        display: grid;
+    }
+    .SkillCertificate{
+        height: 400px;
+        width: 700px ;
+    }
+    .skillContentPtag{
+        height: 200px;
+        width: 700px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .Awardpage */
+    .AwardC2{
+        display: grid;
+    }
+    .AwardCertificate{
+        height: 400px;
+        width: 700px ;
+    }
+
+    /* .Projectpage */
+    .ProjectImage{
+        height: 400px;
+        width: 700px ;
+    }
+}
+
+@media(max-width: 680px) {
+
+    /* .homepage */
+    .homepage{
+        height: 90%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileImage{
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* .Aboutpage */
+    .Aboutpage{
+        margin: 0 auto;
+        height: 90%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Aboutpage p{
+        font-size: medium;
+    }
+
+    /* .Skillpage */
+    .SkillCertificate{
+        height: 400px;
+        width: 640px;
+    }
+    .skillContentPtag{
+        height: 400px;
+        width: 640px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .Awardpage */
+    .AwardCertificate{
+        height: 400px;
+        width: 640px;
+    }
+
+    /* .Projectpage */
+    .ProjectImage{
+        height: 400px;
+        width: 640px;
+    }
+}
+
+@media(max-width: 600px) {
+    /* .homepage */
+    .homepage{
+        height: 90%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileImage{
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* .Aboutpage */
+    .Aboutpage{
+        margin: 0 auto;
+        height: 90%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Aboutpage p{
+        font-size: medium;
+    }
+
+    /* .Skillpage */
+    .SkillCertificate{
+        height: 350px;
+        width: 550px;
+    }
+    .skillContentPtag{
+        height: 350px;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Skillpage{
+        font-size: medium;
+    }
+
+    /* .Awardpage */
+    .AwardCertificate{
+        height: 350px;
+        width: 550px;
+    }
+    .AwardContent{
+        font-size: medium;
+    }
+
+    /* .projectpage */
+    .ProjectImage{
+        height: 350px;
+        width: 550px ;
+    }
+}
+
+@media(max-width: 500px) {
+    /* .homepage */
+    .homepage{
+        height: 90%;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .profileImage{
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+    } 
+
+    /* .Aboutpage */
+    .Aboutpage{
+        height: 90%;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .Aboutpage p{
+        font-size: medium;
+    }
+
+    /* .Skillpage */
+    .SkillCertificate{
+        height: 300px;
+        width: 450px ;
+    }
+    .skillContentPtag{
+        height: 300px;
+        width: 450px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Skillpage{
+        font-size: medium;
+    }
+
+    /* .Awardpage */
+    .AwardCertificate{
+        height: 300px;
+        width: 450px ;
+    }
+    .AwardContent{
+        font-size: medium;
+    }
+
+    /* .Projectpage */
+    .ProjectImage{
+        height: 300px;
+        width: 450px ;
+    }
+    .Projectpage{
+        font-size: medium;
+    }
+}
+
+@media(max-width: 400px) {
+    /* .homepage */
+    .homepage{
+        height: 90%;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .homepage p{
+        font-size: smaller;
+    }
+    .homepage h1{
+        font-size: larger;
+    }
+    .profileImage{
+        margin: 0 auto;
+        width: 230px;
+        height: 230px;
+    } 
+
+    /* .Aboutpage */
+    .Aboutpage{
+        height: 90%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Aboutpage p{
+        font-size: small;
+    }
+
+    /* .Skillpage */
+    .SkillCertificate{
+        height: 200px;
+        width: 320px;
+    }
+    .skillContentPtag{
+        height: 200px;
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Skillpage{
+        font-size: small;
+    }
+
+    /* .Awardpage */
+    .AwardCertificate{
+        height: 200px;
+        width: 320px;
+    }
+    .AwardContent{
+        font-size: small;
+    }   
+
+    /* .Projectpage */
+    .ProjectImage{
+        height: 200px;
+        width: 320px;
+    }
+    .Projectpage{
+        font-size: small;
+    } 
+
 }
 
 
@@ -296,6 +592,15 @@ body {
     color: rgb(218, 218, 218);
 }
 
+@media(max-width: 600px) {
+    .Contactpage textarea{
+        width: 400px;
+        height: 250px;
+    }
+    .Contactpage input{
+        width: 400px;
+    }
+}
 
 @media(max-width: 500px) {
     .Contactpage textarea{

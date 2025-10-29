@@ -3,7 +3,7 @@
         <div *ngFor="let skill of skills" class="skillC2" >
             <div class="skillhead"><h1>{{skill.skillname}}</h1></div>
             <div>
-                <img *ngIf="skill.skillLoc" src="{{skill.skillLoc}}" alt="" style="height: 400px; width: 700px">
+                <img *ngIf="skill.skillLoc" src="{{skill.skillLoc}}" alt="" class="SkillCertificate">
                 <p class="skillContentPtag" *ngIf="skill.SkillContent" >{{skill.SkillContent}}</p>
             </div>
         </div>
