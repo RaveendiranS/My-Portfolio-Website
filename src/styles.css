@@ -15,14 +15,22 @@ body {
         url('./app/Images/bg2.jpg') center/cover no-repeat fixed;
 }
 
+
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    z-index: 1000; 
-    backdrop-filter: blur(50px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: none;
 }
+
+.navbar-toggler {
+  border: none;
+}
+
 
 .navbar,
 .navbar .nav-link,
